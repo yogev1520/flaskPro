@@ -3,7 +3,7 @@ from flask import Flask,redirect,url_for
 app= Flask(__name__)#create instance of flask
 
 @app.route("/")
-def index():
+def main():
     return "Index Page"# main page or index page >>>  http://127.0.0.1:5000 <<<
     """here you can put content for main page """
 
