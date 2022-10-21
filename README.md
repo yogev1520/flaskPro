@@ -1,1 +1,3 @@
 # flaskPro basic flask exp  mange server routh redirect and more ...... 
+
+template = needed for reall html templets  >>> the template folder should be in project folder dir <<<
