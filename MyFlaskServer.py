@@ -1,7 +1,7 @@
 from flask import Flask,redirect,url_for,render_template
 
 app= Flask(__name__)#create instance of flask
-
+base_link = "http://127.0.0.1:5000"
 @app.route("/")
 def main():
     return render_template("home.html") #using html mthod to display page
@@ -16,7 +16,7 @@ def main():
 
 @app.route('/login')
 def login():
-    return render_template("LogInForm.html")
+    return render_template("Login.html")
 
 @app.route("/sign_up")
 def sign_up():
