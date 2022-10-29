@@ -1,0 +1,49 @@
+title{    
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul ::before{
+    content: attr();
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+}
+
+a:link, a:visited{
+    display :block;
+    width: 120px;
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    
+
+}
+
+a:hover , a:active{
+    background-color: greenyellow;
+    
+}
+body{
+    text-align: left;
+    color: rgb(86, 47, 194);
+    background-color: rgb(38, 32, 32) ;  
+}
+
+tr{
+    color: aquamarine;
+    padding: 5px;
+    margin-right: 5px;
+}

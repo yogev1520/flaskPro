@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <link rel="shortcut icon" href="https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png">
 <title>
     <h1>home page</h1>  
 </title><br>
+<!-- refrence to the home.css file were the style code -->
+
+
 <ul>
     <li><a href="http://127.0.0.1:5000/sign_up">Sign Up Page</a></li>
     <li><a href="http://127.0.0.1:5000/login">login page</a></li>
@@ -14,7 +19,8 @@
     <li><a href="link">name</a></li>
     <li><a href="link">name</a></li>    
 </ul><br>
-<!-- 
+ <!--
+    style lest attr 
 padding
 margin
 float (left)
@@ -28,60 +34,7 @@ text-transform
 width
 background-image
 -->
-<style>
-
-
-title{
-    
-    padding: 0px;
-    margin: 0px;
-}
-
-li{
-    float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    
-    
-}
-
-ul{
-    list-style-type: none;
-    margin:  0;
-    padding: 0;
-}
-a:link, a:visited{
-    display :block;
-    width: 120px;
-    background-color: yellowgreen;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px;
-    
-
-}
-
-a:hover , a:active{
-    background-color: greenyellow;
-    
-}
-body{
-    text-align: left;
-    color: rgb(86, 47, 194);
-    background-color: rgb(38, 32, 32) ;  
-}
-tr{
-    color: aquamarine;
-    padding: 5px;
-    margin-right: 5px;
-}
-</style>
- 
+<link  rel="stylesheet" href="/templates/home.css" type="text/css">
 </head>
 <body>
     <h1>home page</h1>
@@ -101,7 +54,10 @@ tr{
     <P>flask instraction for DebagMode </P>
     <table>
       <tr>flask --app proName --debug run </tr><br>
-      <tr>flask --app MyFlaskServer{.py ext file you create} --debug run</tr><br>
+      
+      <tr>flask --app MyFlaskServer --debug run </tr><br>
+      <tr>use the command above</tr><br>
+
       <tr>then refresh page after chinge and you got the new content </tr><br>
     </table>
     <p>exsamples page </p>
