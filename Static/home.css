@@ -1,25 +1,21 @@
-title{    
-    padding: 0px;
-    margin: 0px;
-}
 
 li{
     float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: px;
 }
 
-ul ::before{
-    content: attr();
+ul {
+    
     list-style-type: none;
     margin:  0;
     padding: 0;
 }
 
 a:link, a:visited{
-    display :block;
+    display :flex;
     width: 120px;
     background-color: yellowgreen;
     color: white;

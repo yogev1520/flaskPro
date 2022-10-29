@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="grid" action="/result" method="post">
+            <center>
+                {% if name %}
+                <h3 style="color: chocolate;">hello {{name}}, how are you ? </h3>
+
+                {% endif %}
+            </center>
+
+            <label for="Name">enter your name</label>
+            <input type="text" name="name" id="name">     
+            <center><input type="Submit" class="file_submit"></center>
+        </form>
+    </body>
+</html>
