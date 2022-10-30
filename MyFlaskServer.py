@@ -28,25 +28,26 @@ def hello_name():
     return "hello.world!"
     """ here you can put content to the page"""
 
+
+
 """ for thet return page i add request from flask lib 
 and add method post and get 
 
-
-
 on the html i use {% if name %}
 btw you heve to close the if statment with {% andif %}
-<h2> create heder with hello {{name}},how are you ?  </h2>
 
+<h2> create heder with hello {{name}},how are you ?  </h2>
 {% if name %}
 
 <h3 style="color: chocolate;">hello {{name}}, how are you ? </h3>
 
 {% endif %}
-
 and render name in render_templets to return it 
 """
 
-""" video-src = https://www.youtube.com/watch?v=0meTbQQaosU
+"""
+video sorce 
+video-src = https://www.youtube.com/watch?v=0meTbQQaosU
 video_src using data-base=https://www.youtube.com/watch?v=Z1RJmh_OqeA
 """
 @app.route("/result",methods = ["POST","GET"])
@@ -54,9 +55,6 @@ def result():
     output =request.form.to_dict()
     name =output['name']
     return render_template("result.html", name = name)
-
-
-
 
 
 if __name__== "__main__":

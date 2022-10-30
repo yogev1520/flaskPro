@@ -3,21 +3,30 @@
 
         <style>
             body{
-                background-color: aquamarine;
+                background-color: rgb(223, 233, 73);
             }
         </style>
     </head>
     <body>
+        <!-- form class mame <class_name> action="/result"=<<<redirct to the /result page on wab>>>method<post>
+        to use the post method you requier to add the pyton file the post/get method like thet 
+        @app.route("/result",methods = ["POST","GET"]) befor the function 
+        -->
         <form class="grid" action="/result" method="post">
             <center>
+                <!-- if statment -->
                 {% if name %}
-                <h3 style="color: chocolate;">hello {{name}}, how are you ? </h3>
+                <!-- if == true  make H3 with color and use name id from the html page -->
+                <h3 style="color: rgb(72, 0, 172);">hello {{name}}, how are you ? </h3>
 
                 {% endif %}
+                <!-- and statment -->
             </center>
-
+            <!-- label some continer for the text -->
             <label for="Name">enter your name</label>
+            <!-- the input field we will use the id name to disply it back on wab -->
             <input type="text" name="name" id="name">     
+            <!-- the Submit  -->
             <center><input type="Submit" class="file_submit"></center>
         </form>
     </body>
