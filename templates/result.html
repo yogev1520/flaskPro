@@ -2,8 +2,32 @@
     <head>
 
         <style>
+            form{
+                align-items: center;
+                text-align: center;
+                display: block;
+                src: url();
+            }
+            label{
+                display: block;
+                
+                
+                color: rgb(47, 47, 41);
+            }
             body{
-                background-color: rgb(223, 233, 73);
+                
+                background-image: url("/static/bg/bg13.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h3{
+                align-items: center;
+                display: block;
+                background-image: url("/static/bg/bg4.jpg");
+            }
+            input{
+                color: rgb(102, 241, 241);
+                padding: 5px;
             }
         </style>
     </head>
@@ -15,17 +39,26 @@
         <form class="grid" action="/result" method="post">
             <center>
                 <!-- if statment -->
-                {% if name %}
+                {% if name,email,password %}
                 <!-- if == true  make H3 with color and use name id from the html page -->
-                <h3 style="color: rgb(72, 0, 172);">hello {{name}}, how are you ? </h3>
-
+                <h3 style="color: rgb(210, 99, 74);">hello {{name}}, how are you ? </h3>
+                <h3 style="color: rgb(156, 68, 243);">your {{email}}, on system now !!! </h3>
+                <h3 style="color: rgb(194, 78, 130);">your pwd {{password}}, keep it save ? </h3>
                 {% endif %}
+              
                 <!-- and statment -->
             </center>
+            
             <!-- label some continer for the text -->
             <label for="Name">enter your name</label>
             <!-- the input field we will use the id name to disply it back on wab -->
-            <input type="text" name="name" id="name">     
+            <input type="text" name="name" id="name"><br>
+            <label for="password">enter password</label>
+            <input type="password" name="password" id="password"><br>
+            <label for="email">enter your email</label>
+            <input type="email" name="email" id="email"> <br>
+            
+                
             <!-- the Submit  -->
             <center><input type="Submit" class="file_submit"></center>
         </form>

@@ -52,9 +52,16 @@ video_src using data-base=https://www.youtube.com/watch?v=Z1RJmh_OqeA
 """
 @app.route("/result",methods = ["POST","GET"])
 def result():
-    output =request.form.to_dict()
-    name =output['name']
-    return render_template("result.html", name = name)
+    output =request.form.to_dict()#get the form from the html and extract list of valuse
+    name =output['name']#the name of the input id
+    password = output['password']#the name of the input id
+    email=output['email']#the name of the input id
+
+    mystorg= open("storg.txt",'a')
+
+   
+
+    return render_template("result.html", name = name,email=email,password=password)#render the values here !!! 
 
 
 if __name__== "__main__":
