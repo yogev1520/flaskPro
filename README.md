@@ -13,3 +13,5 @@ to be able use html file in the server you will need dir calld templets and impo
 need to do  = serch info on docs for redirct !!!! 
 
 php docs = https://blog.devsense.com/2022/generics-in-php-using-phpdoc?from=vscode
+
+sqlite3 docs = "https://docs.python.org/3/library/sqlite3.html"
